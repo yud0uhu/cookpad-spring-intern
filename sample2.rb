@@ -1,6 +1,8 @@
 print "\x1b[2J"
 loop do
+    system 'clear'
     print "\x1b[1;1H"
+    
     eval$s=%q(eval(%w(puts
           (%(eval$s=%q(#$s# ####
          ##             ##      ##
@@ -14,20 +16,24 @@ loop do
           ###############
           #  #    # # )) )#)*""
           ))
+
   sleep 0.2
+  system 'clear'
     print "\x1b[1;1H"
-    eval$s=%q(eval(%w(puts
-          (%(eval$s=%q(#$s# #######
+
+    eval$s=%q(eval(%w(puts("\e[40m
+          (%(eval$s=%q(#$s# ####
          ##             ##      ##
         ##                       ##
-       ##    #        #      ####
+       ##  ####      ####      ###
       ##                   ####
       ##     ########       ##
       ##     #      #       ##
        ##    ########       ##
         ##               ###
           ###############
-          # ## ##  # )) )#)*""
+          #  #    # # )) )#\e[m"))*""
           ))
-  sleep 0.2
+  
+    sleep 0.2
 end
