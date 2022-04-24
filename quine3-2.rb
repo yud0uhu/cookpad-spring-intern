@@ -1,0 +1,1 @@
+eval (s = %q[puts "s= %q["+s+"]; eval s"])
