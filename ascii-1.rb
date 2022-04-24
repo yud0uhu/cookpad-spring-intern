@@ -1,0 +1,9 @@
+eval(
+%w(pu
+ts"\e
+[46mH
+ello,
+world
+!\e[m
+")*""
+)#
