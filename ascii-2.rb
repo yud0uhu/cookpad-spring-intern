@@ -1,4 +1,4 @@
-    eval(%w(puts  "\e43m
+    eval(%w(puts  "\e[43m
     ###         ##      ###
   ##             #        ##
  ##                      ###
