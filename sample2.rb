@@ -15,7 +15,7 @@ loop do
   sleep 0.2
 
     print "\x1b[1;1H"
-    eval(%w(puts  "\e43m
+    eval(%w(puts  "\e[43m
     ###         ##      ###
   ##             #        ##
  ##                      ###
